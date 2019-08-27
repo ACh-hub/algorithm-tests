@@ -1,13 +1,22 @@
 describe('reverseint.js',()=>{
-    it('should be function',()=>{
-        expect(typeof reverseInt).toBe('function');
+    it('reverseInt should be defined',()=>{
+        expect(reverseInt).toBeDefined();
     })
 
-    it('should return number',()=>{
-        expect(typeof reverseInt(42)).toBe('number');
+    it('reverseInt reverse positive number', ()=>{
+        expect(reverseInt(5)).toBe(5);
+        expect(reverseInt(15)).toBe(51);
+        expect(reverseInt(90)).toBe(9);
+        expect(reverseInt(2359)).toBe(9532);
     })
 
-    it('1234 should be 4321', ()=>{
-        expect(reverseInt(1234)).toBe(4321);
+    it('reverseInt reverse negative number', ()=>{
+        expect(reverseInt(-5)).toBe(-5);
+        expect(reverseInt(-15)).toBe(-51);
+        expect(reverseInt(-90)).toBe(-9);
+        expect(reverseInt(-2359)).toBe(-9532);
+    })
+    it('reverseInt handles 0', ()=>{
+        expect(reverseInt(0)).toBe(0);
     })
 })

@@ -1,4 +1,4 @@
 
-// Simplest solution treating number as a string
-const reverseInt = givenInt => parseInt([...givenInt.toString()].reverse().join(''),10);
+// Simple solution treating number as a string
+const reverseInt = givenInt => parseInt([...Math.abs(givenInt).toString()].reverse().join(''), 10) * Math.sign(givenInt)
 
