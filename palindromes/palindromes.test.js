@@ -1,10 +1,6 @@
 describe('palindromes.js', ()=>{
-    it('should be the function',()=>{
-        expect(typeof palindrome).toBe('function');
-    })
-
-    it('should return boolean',()=>{
-        expect(typeof palindrome('ala')).toBe('boolean');
+    it('palindrome should be defined',()=>{
+        expect(palindrome).toBeDefined();
     })
 
     it('ala is a palindrome',()=>{

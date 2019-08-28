@@ -1,6 +1,6 @@
 describe('reversestring.js',function(){
-    it('should be the function',function(){
-        expect(typeof reverseString).toBe('function');
+    it('reverseString should be defined',function(){
+        expect(reverseString).toBeDefined();
     })
 
     it('should revert the string',function(){
@@ -8,10 +8,6 @@ describe('reversestring.js',function(){
         expect(reverseString('Howdy')).toBe('ydwoH');
         expect(reverseString('Greetings from Earth')).toBe('htraE morf sgniteerG');
         expect(reverseString('')).toBe('');
-    })
-
-    it('should return string',function(){
-        expect(typeof(reverseString('anything'))).toBe('string');
     })
     
 })
