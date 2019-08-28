@@ -3,6 +3,9 @@ describe('fizzbuzz.js', function(){
         beforeEach(function(){
             spyOn(window.console,'log')
         })
+        afterEach(function(){
+            window.console.log.calls.reset();
+        })
 
         it('is defined', function(){
             expect(fizzbuzz).toBeDefined();
