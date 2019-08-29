@@ -8,9 +8,12 @@ describe('capitalize.js', () => {
             expect(capitalizeWord('hi')).toEqual(
                 'Hi'
             );
+            expect(capitalizeWord('Hi')).toEqual(
+                'Hi'
+            );
         });
     })
-    
+
     describe('capitalize()', () => {
         it('is defined', () => {
             expect(capitalize).toBeDefined()
